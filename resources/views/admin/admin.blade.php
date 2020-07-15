@@ -827,16 +827,16 @@
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body p-0"style="padding-top: 15px!important;">
-                                <table id="example3" class="table table-bordered table-striped">
+                                <table id="example2" class="table table-bordered table-striped">
                                     <thead>
                                     <tr>
                                         <th>Tên danh mục</th>
                                         <th>Action</th>
                                     </tr>
                                     </thead>
-                                    @foreach ($category as $categories)
                                     <tbody>
-                                    <tr>
+                                    @foreach ($category as $categories)
+                                        <tr>
                                         <td>{{$categories->category_name}}</td>
                                         <td>
                                             <div class="row">
@@ -853,8 +853,8 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    </tbody>
                                     @endforeach
+                                    </tbody>
                                 </table>
                             </div>
                             <!-- /.card-body -->
@@ -894,9 +894,9 @@
                                         <th>Action</th>
                                     </tr>
                                     </thead>
-                                    @foreach($product_table as $product_tables)
                                     <tbody>
-                                    <tr>
+                                    @foreach($product_table as $product_tables)
+                                        <tr>
                                         <td>
                                         {{$product_tables->name}}
                                         </td>
@@ -1506,16 +1506,7 @@
         $('#example2').DataTable({
             "paging": true,
             "lengthChange": false,
-            "searching": false,
-            "ordering": true,
-            "info": true,
-            "autoWidth": false,
-            "responsive": true,
-        });
-        $('#example3').DataTable({
-            "paging": true,
-            "lengthChange": false,
-            "searching": false,
+            "searching": true,
             "ordering": true,
             "info": true,
             "autoWidth": false,

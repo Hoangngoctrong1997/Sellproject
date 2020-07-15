@@ -27,7 +27,7 @@ class admin_controller extends Controller
         if($req->hasFile('fImage')):
             $image = $req->file('fImage');
             $filename=$image->getClientOriginalName();
-            $image->move('images/img',$filename);
+            $image->move('images/img/demo',$filename);
             $product->image_link = $filename;
         endif;
         $product->created = Carbon::now('Asia/Ho_Chi_Minh');
