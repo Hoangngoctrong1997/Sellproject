@@ -21,6 +21,7 @@ Route::group(['prefix' => 'admin'], function () {
 });
 Route::group(['prefix' => 'home'], function () {
     Route::get('index', 'home_controller@index')->name('home_index');
+    Route::get ('product_by_ajax/{id}','home_controller@get_product_ajax')->name('product_by_ajax');
     Route::get('product', 'home_controller@product')->name('product');
     Route::get('product_detail/{slug}', 'home_controller@product_detail')->name('product_detail');
 });

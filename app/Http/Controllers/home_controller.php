@@ -19,6 +19,10 @@ class home_controller extends Controller
         return view('home.home',compact('product_hot','domain','product','product_hot_view'));
 
     }
+    public function get_product_ajax($id){
+        echo $id;die;
+
+    }
     public function product(){
         $domain  = $this->domain;
         $product =DB::table('product')->orderBy('created', 'desc')->get();

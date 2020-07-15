@@ -88,7 +88,7 @@
                     <a class="nav-link active" data-toggle="tab" href="#best-seller" role="tab">Sản phẩm mới</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#featured" role="tab">Nổi bật</a>
+                    <a class="nav-link" data-toggle="tab" id="hot_product" href="#featured" role="tab">Nổi bật</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#sale" role="tab">Giảm giá</a>
@@ -1034,4 +1034,19 @@
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $( "#hot_product" ).click(function() {
+            $.ajax({
+                url:"home/product_by_ajax/"+this.id,
+                type : "get",
+                dataType:"json",
+                success : function (){
+                    alert("aaaa");
+                }
+            });
+        });
+    });
+</script>
 @endsection
