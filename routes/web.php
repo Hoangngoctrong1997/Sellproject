@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'admin_controller@index')->name('admin_index');
+Route::get('/', 'home_controller@index')->name('home_index');
 Route::group(['prefix' => 'admin'], function () {
     Route::get('index', 'admin_controller@index')->name('admin_index');
     Route::post('create', 'admin_controller@create_product')->name('create_product');
