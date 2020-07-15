@@ -326,7 +326,7 @@
                         </li>
 
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="about.html">Abouts</a>
                         </li>
 
                         <li>
