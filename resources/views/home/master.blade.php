@@ -330,7 +330,7 @@
                         </li>
 
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="contact.html">Contacts</a>
                         </li>
                     </ul>
                 </nav>
