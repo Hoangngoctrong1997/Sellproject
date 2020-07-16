@@ -144,42 +144,7 @@
                 <!-- - -->
                 <div class="tab-pane fade" id="featured" role="tabpanel">
                     <div class="row">
-                        <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
-                            <!-- Block2 -->
-                            <div class="block2">
-                                <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-                                    <img src="/images/img/demo/item-07.jpg" alt="IMG-PRODUCT">
 
-                                    <div class="block2-overlay trans-0-4">
-                                        <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                                            <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                            <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-                                        </a>
-
-                                        <div class="block2-btn-addcart w-size1 trans-0-4">
-                                            <!-- Button -->
-                                            <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                                Add to Cart
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="block2-txt p-t-20">
-                                    <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                        Frayed denim shorts
-                                    </a>
-
-                                    <span class="block2-oldprice m-text7 p-r-5">
-											$29.50
-										</span>
-
-                                    <span class="block2-newprice m-text8 p-r-5">
-											$15.90
-										</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <!---->
@@ -467,6 +432,7 @@
     $(document).ready(function () {
         let loding = $('#loading').html();
 
+        let tmpl = $('#my-template').html();
         $( ".product_by_ajax" ).click(function() {
 
             let render_loading = Mustache.render(loding);
@@ -475,8 +441,6 @@
 
             var id = this.id;
 
-            let tmpl = $('#my-template').html();
-
             $.ajax({
                 url: "/home/product_by_ajax/" + id,
                 method : "get",
@@ -484,11 +448,13 @@
                     $("#featured").children().empty(); /// xóa component cũ và trang load///
 
                     product.forEach((item) => {
+                        console.log(item);
                         let rendered = Mustache.render(tmpl, item);
                         $("#featured").children().append(rendered); ////thêm mới/////
                     });
                 },
                 error: error => {
+
                     console.log(error);
                 }
             });
