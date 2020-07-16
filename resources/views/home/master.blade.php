@@ -729,6 +729,8 @@
 <!--===============================================================================================-->
 <script type="text/javascript" src="{{asset('/home/vendor/daterangepicker/moment.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('/home/vendor/daterangepicker/daterangepicker.js')}}"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 <script type="text/javascript">
     $('.block2-btn-addcart').each(function(){
         var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();

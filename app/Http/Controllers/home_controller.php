@@ -20,8 +20,18 @@ class home_controller extends Controller
 
     }
     public function get_product_ajax($id){
-        echo $id;die;
-
+        $id_req = $id;
+        if($id_req =='hot_product'){
+            $product = product::where('hot_product', '=',1)
+                ->orderBy('created', 'desc')->take(8)->get();
+        }
+        elseif ($id_req =='sale'){
+            $product =DB::table('product')->orderBy('discount', 'desc')->take(8)->get();
+        }
+        elseif($id_req =='hot_view'){
+            $product = DB::table('product')->orderBy('view', 'desc')->take(8)->get();
+        }
+        return $product;
     }
     public function product(){
         $domain  = $this->domain;
