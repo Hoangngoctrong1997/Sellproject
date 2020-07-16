@@ -8,34 +8,34 @@
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/vendor/bootstrap/css/bootstrap.min.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/fonts/themify/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/fonts/themify/themify-icons.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/fonts/Linearicons-Free-v1.0.0/icon-font.min.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/fonts/elegant-font/html-css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/fonts/elegant-font/html-css/style.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/vendor/animate/animate.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/vendor/css-hamburgers/hamburgers.min.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/vendor/animsition/css/animsition.min.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/vendor/select2/select2.min.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/vendor/daterangepicker/daterangepicker.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/vendor/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/vendor/slick/slick.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/vendor/lightbox2/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/vendor/lightbox2/css/lightbox.min.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/css/util.css">
-    <link rel="stylesheet" type="text/css" href="/home/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/css/util.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/css/main.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/home/vendor/noui/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/home/vendor/noui/nouislider.min.css')}}">
 
 </head>
 <body class="animsition">
@@ -703,14 +703,14 @@
 <!-- Modal Video 01-->
 
 <!--===============================================================================================-->
-<script type="text/javascript" src="/home/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/jquery/jquery-3.2.1.min.js')}}"></script>
 <!--===============================================================================================-->
-<script type="text/javascript" src="/home/vendor/animsition/js/animsition.min.js"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/animsition/js/animsition.min.js')}}"></script>
 <!--===============================================================================================-->
-<script type="text/javascript" src="/home/vendor/bootstrap/js/popper.js"></script>
-<script type="text/javascript" src="/home/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/bootstrap/js/popper.js')}}"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
 <!--===============================================================================================-->
-<script type="text/javascript" src="/home/vendor/select2/select2.min.js"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/select2/select2.min.js')}}"></script>
 <script type="text/javascript">
     $(".selection-1").select2({
         minimumResultsForSearch: 20,
@@ -718,17 +718,17 @@
     });
 </script>
 <!--===============================================================================================-->
-<script type="text/javascript" src="/home/vendor/slick/slick.min.js"></script>
-<script type="text/javascript" src="/home/js/slick-custom.js"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/slick/slick.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('/home/js/slick-custom.js')}}"></script>
 <!--===============================================================================================-->
-<script type="text/javascript" src="/home/vendor/countdowntime/countdowntime.js"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/countdowntime/countdowntime.js')}}"></script>
 <!--===============================================================================================-->
-<script type="text/javascript" src="/home/vendor/lightbox2/js/lightbox.min.js"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/lightbox2/js/lightbox.min.js')}}"></script>
 <!--===============================================================================================-->
-<script type="text/javascript" src="/home/vendor/sweetalert/sweetalert.min.js"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/sweetalert/sweetalert.min.js')}}"></script>
 <!--===============================================================================================-->
-<script type="text/javascript" src="/home/vendor/daterangepicker/moment.min.js"></script>
-<script type="text/javascript" src="/home/vendor/daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/daterangepicker/moment.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/daterangepicker/daterangepicker.js')}}"></script>
 <script type="text/javascript">
     $('.block2-btn-addcart').each(function(){
         var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
@@ -746,7 +746,7 @@
 </script>
 
 <!--===============================================================================================-->
-<script type="text/javascript" src="/home/vendor/parallax100/parallax100.js"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/parallax100/parallax100.js')}}"></script>
 <script type="text/javascript">
     $('.parallax100').parallax100();
 </script>
@@ -762,6 +762,6 @@
     });
 </script>
 <!--===============================================================================================-->
-<script src="/home/js/main.js"></script>
+<script src="{{asset('/home/js/main.js')}}"></script>
 </body>
 </html>
