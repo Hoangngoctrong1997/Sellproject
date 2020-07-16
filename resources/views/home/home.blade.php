@@ -867,7 +867,7 @@
     <div class="flex-w">
         <!-- Block4 -->
         <divs class="block4 wrap-pic-w">
-            <img src="/images/img/demo/1.jpg" alt="IMG-INSTAGRAM" style="width: 370px!important;height: 277px!important;">
+            <img src="/images/img/demo/1.jpg" alt="IMG-INSTAGRAM" style="width: 100%!important;height: 277px!important;">
 
             <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
 					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">

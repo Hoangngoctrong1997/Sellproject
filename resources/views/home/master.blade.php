@@ -43,7 +43,7 @@
 <!-- header fixed -->
 <div class="wrap_header fixed-header2 trans-0-4">
     <!-- Logo -->
-    <a href="index.html" class="logo">
+    <a href="{!! route('home_index') !!}" class="logo">
         <img src="/images/img/demo/icons/logo.png" alt="IMG-LOGO">
     </a>
 
@@ -196,7 +196,7 @@
             </div>
 
             <!-- Logo2 -->
-            <a href="index.html" class="logo2">
+            <a href="{!! route('home_index') !!}" class="logo2">
                 <img src="/images/img/demo/icons/logo.png" alt="IMG-LOGO">
             </a>
 
