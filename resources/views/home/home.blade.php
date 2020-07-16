@@ -456,19 +456,35 @@
         </div>
     </div>
 </script>
+<script id="loading" type="x-tmpl-mustache">
+     <div class="load-3">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+</script>
 <script>
     $(document).ready(function () {
+        let loding = $('#loading').html();
+
         $( ".product_by_ajax" ).click(function() {
-            $("#featured").children().empty();
+
+            let render_loading = Mustache.render(loding);
+
+            $("#featured").children().html(render_loading);
+
             var id = this.id;
+
             let tmpl = $('#my-template').html();
+
             $.ajax({
                 url: "/home/product_by_ajax/" + id,
                 method : "get",
                 success : product  => {
+                    $("#featured").children().empty(); /// xóa component cũ và trang load///
+
                     product.forEach((item) => {
-                        console.log(item);
-                        let rendered = Mustache.render(tmpl, item); ////xóa component cũ/////
+                        let rendered = Mustache.render(tmpl, item);
                         $("#featured").children().append(rendered); ////thêm mới/////
                     });
                 },
