@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home 02</title>
+    <title>Đèn trang trí</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="{{asset('')}}"> <!--thiếu cấy ni là không lấy đàng dẫn được nhá -->
@@ -60,23 +60,23 @@
                 </li>
 
                 <li class="sale-noti">
-                    <a href="">Sale</a>
+                    <a href="/">Sale</a>
                 </li>
 
                 <li>
-                    <a href="cart.html">Features</a>
+                    <a href="/">Features</a>
                 </li>
 
                 <li>
-                    <a href="blog.html">Blog</a>
+                    <a href="/">Blog</a>
                 </li>
 
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="/">About</a>
                 </li>
 
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="/">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -314,11 +314,11 @@
                         </li>
 
                         <li class="sale-noti">
-                            <a href="product.html">Sale</a>
+                            <a href="/">Sale</a>
                         </li>
 
                         <li>
-                            <a href="cart.html">Features</a>
+                            <a href="cart.">Features</a>
                         </li>
 
                         <li>
