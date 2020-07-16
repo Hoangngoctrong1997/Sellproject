@@ -889,7 +889,7 @@
 
         <!-- Block4 -->
         <div class="block4 wrap-pic-w">
-            <img src="/images/img/demo/2.jpg" alt="IMG-INSTAGRAM"style="width: 370px!important;height: 277px!important;">
+            <img src="/images/img/demo/2.jpg" alt="IMG-INSTAGRAM"style="width: 100%!important;height: 277px!important;">
 
             <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
 					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
@@ -911,7 +911,7 @@
 
         <!-- Block4 -->
         <div class="block4 wrap-pic-w">
-            <img src="/images/img/demo/3.jpg" alt="IMG-INSTAGRAM"style="width: 370px!important;height: 277px!important;">
+            <img src="/images/img/demo/3.jpg" alt="IMG-INSTAGRAM"style="width: 100%!important;height: 277px!important;">
 
             <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
 					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
@@ -933,7 +933,7 @@
 
         <!-- Block4 -->
         <div class="block4 wrap-pic-w">
-            <img src="/images/img/demo/4.jpg" alt="IMG-INSTAGRAM"style="width: 370px!important;height: 277px!important;">
+            <img src="/images/img/demo/4.jpg" alt="IMG-INSTAGRAM"style="width: 100%!important;height: 277px!important;">
 
             <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
 					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
@@ -955,7 +955,7 @@
 
         <!-- Block4 -->
         <div class="block4 wrap-pic-w">
-            <img src="/images/img/demo/5.jpg" alt="IMG-INSTAGRAM" style="width: 370px!important;height: 277px!important;">
+            <img src="/images/img/demo/5.jpg" alt="IMG-INSTAGRAM" style="width: 100%!important;height: 277px!important;">
 
             <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
 					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
