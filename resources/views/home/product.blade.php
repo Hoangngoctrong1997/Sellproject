@@ -210,7 +210,7 @@
 
 
 <!--===============================================================================================-->
-<script type="text/javascript" src="/home/vendor/noui/nouislider.min.js"></script>
+<script type="text/javascript" src="{{asset('/home/vendor/noui/nouislider.min.js')}}"></script>
 <script type="text/javascript">
     /*[ No ui ]
     ===========================================================*/
