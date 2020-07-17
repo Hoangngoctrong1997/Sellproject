@@ -33,6 +33,12 @@ class home_controller extends Controller
         }
         return $product;
     }
+
+    public function get_product_filter(Request $filter){
+            $product = product::whereBetween('price', [$filter->lower, $filter->upper])->orderBy('price', 'desc')->get();
+
+        return $product;
+    }
     public function product(){
         $domain  = $this->domain;
         $product =DB::table('product')->orderBy('created', 'desc')->get();

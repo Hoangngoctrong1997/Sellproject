@@ -388,7 +388,7 @@
 <script id="my-template" type="x-tmpl-mustache">
     <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
         <div class="block2">
-            <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
+            <div class="block2-img wrap-pic-w of-hidden pos-relative block2-label@{{type}}">
                 <img src="{{$domain}}@{{image_link}}" alt="@{{name}}">
 
                 <div class="block2-overlay trans-0-4">
@@ -406,7 +406,7 @@
             </div>
 
             <div class="block2-txt p-t-20">
-                <a href="home/chi-tiet-san-pham/@{{slug_name}}" class="block2-name dis-block s-text3 p-b-5">
+                <a href="/chi-tiet-san-pham/@{{slug_name}}" class="block2-name dis-block s-text3 p-b-5">
                     @{{name}}
                 </a>
 
@@ -446,9 +446,10 @@
                 url: "/product_by_ajax/" + id,
                 method : "get",
                 success : product  => {
+                    console.log(product);
                     $("#featured").children().empty(); /// xóa component cũ và trang load///
-
                     product.forEach((item) => {
+                        item.type = id;
                         console.log(item);
                         let rendered = Mustache.render(tmpl, item);
                         $("#featured").children().append(rendered); ////thêm mới/////

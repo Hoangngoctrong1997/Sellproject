@@ -63,7 +63,7 @@
                         <div class="flex-sb-m flex-w p-t-16">
                             <div class="w-size11">
                                 <!-- Button -->
-                                <button class="flex-c-m size4 bg7 bo-rad-15 hov1 s-text14 trans-0-4">
+                                <button id="filter_button" class="flex-c-m size4 bg7 bo-rad-15 hov1 s-text14 trans-0-4">
                                     Lọc
                                 </button>
                             </div>
@@ -143,12 +143,11 @@
                         <div class="rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10">
                             <select class="selection-2" name="sorting">
                                 <option>Giá</option>
-                                <option>$0.00 - $50.00</option>
-                                <option>$50.00 - $100.00</option>
-                                <option>$100.00 - $150.00</option>
-                                <option>$150.00 - $200.00</option>
-                                <option>$200.00+</option>
-
+                                <option>Dưới $1000000</option>
+                                <option>Dưới $2000000</option>
+                                <option>Dưới $5000000</option>
+                                <option>Dưới $700000</option>
+                                <option>Trên $7000000</option>
                             </select>
                         </div>
                     </div>
@@ -157,44 +156,44 @@
 							Hiển thị 1–12 trong 16 sản phẩm
 						</span>
                 </div>
-
                 <!-- Product -->
-                <div class="row">
-                    @foreach ($product as $products)
-                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-                        <!-- Block2 -->
-                        <div class="block2">
-                            <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-                                <img src="{{$domain}}{{$products->image_link}}" alt="{{$products->name}}"style="width: 100%!important;height: 360px!important;">
+                <div id="product_chil">
+                    <div class="row">
+                        @foreach ($product as $products)
+                            <div id="product" class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                                <!-- Block2 -->
+                                <div class="block2">
+                                    <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+                                        <img src="{{$domain}}{{$products->image_link}}" alt="{{$products->name}}"style="width: 100%!important;height: 360px!important;">
 
-                                <div class="block2-overlay trans-0-4">
-                                    <a href="{{route('chi-tiet-san-pham',[$products->slug_name])}}" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-                                    </a>
+                                        <div class="block2-overlay trans-0-4">
+                                            <a href="{{route('chi-tiet-san-pham',[$products->slug_name])}}" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                                <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                                <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                            </a>
 
-                                    <div class="block2-btn-addcart w-size1 trans-0-4">
-                                        <!-- Button -->
-                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                            Add to Cart
-                                        </button>
+                                            <div class="block2-btn-addcart w-size1 trans-0-4">
+                                                <!-- Button -->
+                                                <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="block2-txt p-t-20">
+                                        <a href="{{route('chi-tiet-san-pham',[$products->slug_name])}}" class="block2-name dis-block s-text3 p-b-5">
+                                            {{$products->name}}
+                                        </a>
+                                        <span class="block2-price m-text6 p-r-5">
+										{{$products->price}}
+									</span>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="block2-txt p-t-20">
-                                <a href="{{route('chi-tiet-san-pham',[$products->slug_name])}}" class="block2-name dis-block s-text3 p-b-5">
-                                    {{$products->name}}
-                                </a>
-                                <span class="block2-price m-text6 p-r-5">
-										{{$products->price}}
-									</span>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
-                    @endforeach
                 </div>
-
                 <!-- Pagination -->
 {{--                <div class="pagination flex-m flex-w p-t-26">--}}
 {{--                    <a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>--}}
@@ -217,11 +216,11 @@
     var filterBar = document.getElementById('filter-bar');
 
     noUiSlider.create(filterBar, {
-        start: [ 50, 200 ],
+        start: [ 50, 10000000 ],
         connect: true,
         range: {
-            'min': 50,
-            'max': 200
+            'min': 0,
+            'max': 10000000
         }
     });
 
@@ -234,6 +233,88 @@
         skipValues[handle].innerHTML = Math.round(values[handle]) ;
     });
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script id="product_filter_price" type="x-tmpl-mustache">
 
+    <div id="product" class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+   <div class="block2">
+    <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+        <img src="{{$domain}}@{{image_link}}" alt="@{{name}}"style="width: 100%!important;height: 360px!important;">
+
+        <div class="block2-overlay trans-0-4">
+            <a href="/chi-tiet-san-pham/@{{slug_name}}" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+            </a>
+
+            <div class="block2-btn-addcart w-size1 trans-0-4">
+                <!-- Button -->
+                <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="block2-txt p-t-20">
+    <a href="/chi-tiet-san-pham/@{{slug_name}}" class="block2-name dis-block s-text3 p-b-5">
+        @{{name}}
+    </a>
+<span class="block2-price m-text6 p-r-5">
+@{{price}}
+    </span>
+</div>
+</div>
+</div>
+</script>
+<script id="loading" type="x-tmpl-mustache">
+     <div class="load-3">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        let loding = $('#loading').html();
+
+        let tmpl = $('#product_filter_price').html();
+
+        $( "#filter_button" ).click(function() {
+
+            let lower = $('#value-lower').text();
+
+            let upper = $('#value-upper').text();
+            console.log(upper);
+            let render_loading = Mustache.render(loding);
+
+            $("#product_chil").children().html(render_loading);
+
+            $.ajax({
+                // url: "/home/product_by_ajax/" + id,
+                url: "/product_by_filter",
+                type : "POST",
+                data   : {
+                    "lower" : lower,
+                    "upper" : upper,
+                    "_token": "{{ csrf_token() }}",
+                },
+                success : product  => {
+                    console.log(product);
+                    $("#product_chil").children().empty(); /// xóa component cũ và trang load///
+                    product.forEach((item) => {
+                        let rendered = Mustache.render(tmpl, item);
+                        $("#product_chil").children().append(rendered); ////thêm mới/////
+                    });
+                },
+                error: error => {
+
+                    console.log(error);
+                }
+            });
+        });
+    });
+</script>
 <!--===============================================================================================-->
 @endsection

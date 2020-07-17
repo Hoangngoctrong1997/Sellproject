@@ -22,7 +22,9 @@ class admin_controller extends Controller
 
     }
     public function create_product(Request $req)
+
     {
+        echo $req->product_name;die;
         $product = new product();
         if($req->hasFile('fImage')):
             $image = $req->file('fImage');

@@ -26,4 +26,7 @@ Route::group(['prefix' => '/'], function () {
 
     /////ajax/////
      Route::get ('product_by_ajax/{id}','home_controller@get_product_ajax')->name('product_by_ajax');
+
+     Route::POST ('product_by_filter','home_controller@get_product_filter')->name('product_by_filter');
+
 });
