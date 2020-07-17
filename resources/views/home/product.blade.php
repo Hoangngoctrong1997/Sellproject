@@ -168,7 +168,7 @@
                                 <img src="{{$domain}}{{$products->image_link}}" alt="{{$products->name}}"style="width: 100%!important;height: 360px!important;">
 
                                 <div class="block2-overlay trans-0-4">
-                                    <a href="{{route('product_detail',[$products->slug_name])}}" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                    <a href="{{route('chi-tiet-san-pham',[$products->slug_name])}}" class="block2-btn-addwishlist hov-pointer trans-0-4">
                                         <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
                                         <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                                     </a>
@@ -183,7 +183,7 @@
                             </div>
 
                             <div class="block2-txt p-t-20">
-                                <a href="{{route('product_detail',[$products->slug_name])}}" class="block2-name dis-block s-text3 p-b-5">
+                                <a href="{{route('chi-tiet-san-pham',[$products->slug_name])}}" class="block2-name dis-block s-text3 p-b-5">
                                     {{$products->name}}
                                 </a>
                                 <span class="block2-price m-text6 p-r-5">
@@ -196,10 +196,10 @@
                 </div>
 
                 <!-- Pagination -->
-                <div class="pagination flex-m flex-w p-t-26">
-                    <a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
-                    <a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
-                </div>
+{{--                <div class="pagination flex-m flex-w p-t-26">--}}
+{{--                    <a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>--}}
+{{--                    <a href="#" class="item-pagination flex-c-m trans-0-4">2</a>--}}
+{{--                </div>--}}
             </div>
         </div>
     </div>

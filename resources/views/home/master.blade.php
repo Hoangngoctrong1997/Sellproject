@@ -43,7 +43,7 @@
 <!-- header fixed -->
 <div class="wrap_header fixed-header2 trans-0-4">
     <!-- Logo -->
-    <a href="{!! route('home_index') !!}" class="logo">
+    <a href="{!! route('trang-chu') !!}" class="logo">
         <img src="/images/img/demo/icons/logo.png" alt="IMG-LOGO">
     </a>
 
@@ -52,11 +52,11 @@
         <nav class="menu">
             <ul class="main_menu">
                 <li>
-                    <a href="{!! route('home_index') !!}">Home</a>
+                    <a href="{!! route('trang-chu') !!}">Home</a>
                 </li>
 
                 <li>
-                    <a href="{!! route('product') !!}">Shop</a>
+                    <a href="{!! route('san-pham') !!}">Shop</a>
                 </li>
 
                 <li class="sale-noti">
@@ -173,7 +173,7 @@
 <!-- top noti -->
 <div class="flex-c-m size22 bg0 s-text21 pos-relative">
     20% off everything!
-    <a href="product.html" class="s-text22 hov6 p-l-5">
+    <a href="{!! route('san-pham') !!}" class="s-text22 hov6 p-l-5">
         Shop Now
     </a>
 
@@ -196,7 +196,7 @@
             </div>
 
             <!-- Logo2 -->
-            <a href="{!! route('home_index') !!}" class="logo2">
+            <a href="{!! route('trang-chu') !!}" class="logo2">
                 <img src="/images/img/demo/icons/logo.png" alt="IMG-LOGO">
             </a>
 
@@ -306,11 +306,11 @@
                 <nav class="menu">
                     <ul class="main_menu">
                         <li>
-                            <a href="{!! route('home_index') !!}">Home</a>
+                            <a href="{!! route('trang-chu') !!}">Home</a>
                         </li>
 
                         <li>
-                            <a href="{!! route('product')!!}">Shop</a>
+                            <a href="{!! route('san-pham')!!}">Shop</a>
                         </li>
 
                         <li class="sale-noti">
@@ -318,19 +318,19 @@
                         </li>
 
                         <li>
-                            <a href="cart.">Features</a>
+                            <a href="/">Features</a>
                         </li>
 
                         <li>
-                            <a href="blog.html">Blog</a>
+                            <a href="/">Blog</a>
                         </li>
 
                         <li>
-                            <a href="about.html">Abouts</a>
+                            <a href="/">Abouts</a>
                         </li>
 
                         <li>
-                            <a href="contact.html">Contacts</a>
+                            <a href="/">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -493,27 +493,27 @@
                 </li>
 
                 <li class="item-menu-mobile">
-                    <a href="{!! route('product')!!}">Shop</a>
+                    <a href="{!! route('san-pham')!!}">Shop</a>
                 </li>
 
                 <li class="item-menu-mobile">
-                    <a href="product.html">Sale</a>
+                    <a href="/">Sale</a>
                 </li>
 
                 <li class="item-menu-mobile">
-                    <a href="cart.html">Features</a>
+                    <a href="/">Features</a>
                 </li>
 
                 <li class="item-menu-mobile">
-                    <a href="blog.html">Blog</a>
+                    <a href="/">Blog</a>
                 </li>
 
                 <li class="item-menu-mobile">
-                    <a href="about.html">About</a>
+                    <a href="/">About</a>
                 </li>
 
                 <li class="item-menu-mobile">
-                    <a href="contact.html">Contact</a>
+                    <a href="/">Contact</a>
                 </li>
             </ul>
         </nav>

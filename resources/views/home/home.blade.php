@@ -11,7 +11,7 @@
                     </h2>
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
                         <!-- Button -->
-                        <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                        <a href="{!! route('san-pham') !!}" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
                             Chi Tiết
                         </a>
                     </div>
@@ -25,7 +25,7 @@
                     </h2>
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
                         <!-- Button -->
-                        <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                        <a href="{!! route('san-pham') !!}" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
                             xem ngay
                         </a>
                     </div>
@@ -39,7 +39,7 @@
                     </h2>
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
                         <!-- Button -->
-                        <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                        <a href="{!! route('san-pham') !!}" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
                             chi tiết
                         </a>
                     </div>
@@ -61,7 +61,7 @@
 
                     <div class="block1-wrapbtn w-size2">
                         <!-- Button -->
-                        <a href="{{route('product_detail',[$product_hot_views->slug_name])}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                        <a href="{{route('chi-tiet-san-pham',[$product_hot_views->slug_name])}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
                             XEM
                         </a>
                     </div>
@@ -126,7 +126,7 @@
                                 </div>
 
                                 <div class="block2-txt p-t-20">
-                                    <a href="{{route('product_detail',[$products->slug_name])}}" class="block2-name dis-block s-text3 p-b-5">
+                                    <a href="{{route('chi-tiet-san-pham',[$products->slug_name])}}" class="block2-name dis-block s-text3 p-b-5">
                                         {{$products->name}}
                                     </a>
 
@@ -188,7 +188,7 @@
 
                     <div class="block3-txt p-t-14">
                         <h4 class="p-b-7">
-                            <a href="{{route('product_detail',[$product_hots->slug_name])}}" class="m-text11">
+                            <a href="{{route('chi-tiet-san-pham',[$product_hots->slug_name])}}" class="m-text11">
                                {{$product_hots->name}}
                             </a>
                         </h4>
@@ -392,7 +392,7 @@
                 <img src="{{$domain}}@{{image_link}}" alt="@{{name}}">
 
                 <div class="block2-overlay trans-0-4">
-                    <a href="home/product_detail/@{{item.slug_name}}" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                    <a href="home/chi-tiet-san-pham/@{{item.slug_name}}" class="block2-btn-addwishlist hov-pointer trans-0-4">
                         <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
                         <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                     </a>
@@ -406,7 +406,7 @@
             </div>
 
             <div class="block2-txt p-t-20">
-                <a href="home/product_detail/@{{slug_name}}" class="block2-name dis-block s-text3 p-b-5">
+                <a href="home/chi-tiet-san-pham/@{{slug_name}}" class="block2-name dis-block s-text3 p-b-5">
                     @{{name}}
                 </a>
 
@@ -442,7 +442,8 @@
             var id = this.id;
 
             $.ajax({
-                url: "/home/product_by_ajax/" + id,
+                // url: "/home/product_by_ajax/" + id,
+                url: "/product_by_ajax/" + id,
                 method : "get",
                 success : product  => {
                     $("#featured").children().empty(); /// xóa component cũ và trang load///

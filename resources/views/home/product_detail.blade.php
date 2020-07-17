@@ -176,7 +176,7 @@
                             <img src="{{$domain}}{{$product_lists->image_link}}" alt="{{$product_lists->name}}"style="width: 100%!important;height: 360px!important;">
 
                             <div class="block2-overlay trans-0-4">
-                                <a href="{{route('product_detail',[$product_lists->slug_name])}}" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                <a href="{{route('chi-tiet-san-pham',[$product_lists->slug_name])}}" class="block2-btn-addwishlist hov-pointer trans-0-4">
                                     <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
                                     <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                                 </a>
@@ -191,7 +191,7 @@
                         </div>
 
                         <div class="block2-txt p-t-20">
-                            <a href="{{route('product_detail',[$product_lists->slug_name])}}" class="block2-name dis-block s-text3 p-b-5">
+                            <a href="{{route('chi-tiet-san-pham',[$product_lists->slug_name])}}" class="block2-name dis-block s-text3 p-b-5">
                                 {{$product_lists->name}}
                             </a>
 
