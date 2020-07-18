@@ -29,4 +29,12 @@ Route::group(['prefix' => '/'], function () {
 
      Route::POST ('product_by_filter','home_controller@get_product_filter')->name('product_by_filter');
 
+     Route::POST ('product_by_search','home_controller@get_product_price_search')->name('product_by_search');
+
+     Route::POST ('product_by_other_filter','home_controller@get_product_other_filter')->name('get_product_other_filter');
+
+     Route::POST ('product_by_search_form','home_controller@get_product_by_search_form')->name('product_by_search_form');
+
+
+
 });

@@ -39,6 +39,38 @@ class home_controller extends Controller
 
         return $product;
     }
+    public function get_product_price_search(Request $price){
+        $product = product::where('price', '<=', $price->price_search)->orderBy('price', 'desc')->get();
+
+        return $product;
+    }
+
+    public function get_product_other_filter(Request $other_filter){
+        if($other_filter->other_filter =='popular'){
+            $product = DB::table('product')->orderBy('view', 'desc')->get();
+        }
+        elseif ($other_filter->other_filter =='up_to_down'){
+            $product =DB::table('product')->orderBy('price', 'desc')->get();
+        }
+        elseif($other_filter->other_filter =='down_to_up'){
+            $product = DB::table('product')->orderBy('price')->get();
+        }
+
+        return $product;
+    }
+
+    public function get_product_by_search_form(Request $search_form){
+
+        $product_slug = str_slug($search_form->search_form);
+
+        $product=product::where('slug_name','like', '%'.$product_slug.'%')
+            ->orderBy('created', 'desc')
+            ->get();
+
+        return $product;
+    }
+
+
     public function product(){
         $domain  = $this->domain;
         $product =DB::table('product')->orderBy('created', 'desc')->get();

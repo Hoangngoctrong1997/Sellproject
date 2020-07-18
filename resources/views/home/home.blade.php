@@ -430,12 +430,12 @@
 </script>
 <script>
     $(document).ready(function () {
-        let loding = $('#loading').html();
+        let loading = $('#loading').html();
 
         let tmpl = $('#my-template').html();
         $( ".product_by_ajax" ).click(function() {
 
-            let render_loading = Mustache.render(loding);
+            let render_loading = Mustache.render(loading);
 
             $("#featured").children().html(render_loading);
 

@@ -118,7 +118,7 @@
                     </div>
 
                     <div class="search-product pos-relative bo4 of-hidden">
-                        <input class="s-text7 size6 p-l-23 p-r-50" type="text" name="search-product" placeholder="Tìm kiếm sản phẩm.....">
+                        <input id="search" class="s-text7 size6 p-l-23 p-r-50" type="text" name="search-product" placeholder="Tìm kiếm sản phẩm.....">
 
                         <button class="flex-c-m size5 ab-r-m color2 color0-hov trans-0-4">
                             <i class="fs-12 fa fa-search" aria-hidden="true"></i>
@@ -132,22 +132,21 @@
                 <div class="flex-sb-m flex-w p-b-35">
                     <div class="flex-w">
                         <div class="rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10">
-                            <select class="selection-2" name="sorting">
-                                <option>Bộ lọc</option>
-                                <option>Độ phổ biến</option>
-                                <option>Giá: Thấp đến cao</option>
-                                <option>Giá: Cao đến thấp</option>
+                            <select id="other_filter" class="selection-2" name="sorting">
+                                <option value="popular">Độ phổ biến</option>
+                                <option value="down_to_up">Giá: Thấp đến cao</option>
+                                <option value="up_to_down">Giá: Cao đến thấp</option>
                             </select>
                         </div>
 
-                        <div class="rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10">
+                        <div id="price_search" class="rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10">
                             <select class="selection-2" name="sorting">
                                 <option>Giá</option>
-                                <option>Dưới $1000000</option>
-                                <option>Dưới $2000000</option>
-                                <option>Dưới $5000000</option>
-                                <option>Dưới $700000</option>
-                                <option>Trên $7000000</option>
+                                <option value="1000000">Dưới $1000000</option>
+                                <option value="2000000">Dưới $2000000</option>
+                                <option value="5000000">Dưới $5000000</option>
+                                <option value="7000000">Dưới $700000</option>
+                                <option value="10000000">Dưới $10000000</option>
                             </select>
                         </div>
                     </div>
@@ -238,7 +237,7 @@
 
     <div id="product" class="col-sm-12 col-md-6 col-lg-4 p-b-50">
    <div class="block2">
-    <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+    <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labellike">
         <img src="{{$domain}}@{{image_link}}" alt="@{{name}}"style="width: 100%!important;height: 360px!important;">
 
         <div class="block2-overlay trans-0-4">
@@ -277,17 +276,124 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
-        let loding = $('#loading').html();
+
+        let loading = $('#loading').html();
 
         let tmpl = $('#product_filter_price').html();
+
+        $("#search").keyup(function(){
+            let search_form =( $(this).val());
+
+            let render_loading = Mustache.render(loading);
+
+            $("#product_chil").children().html(render_loading);
+
+            $.ajax({
+                // url: "/home/product_by_ajax/" + id,
+                url: "/product_by_search_form",
+                type : "POST",
+                data   : {
+                    "search_form" : search_form,
+
+                    "_token": "{{ csrf_token() }}",
+                },
+                success : product  => {
+
+                    $("#product_chil").children().empty(); /// xóa component cũ và trang load///
+                    product.forEach((item) => {
+                        let rendered = Mustache.render(tmpl, item);
+                        $("#product_chil").children().append(rendered); ////thêm mới/////
+                    });
+                    console.log(product);
+                },
+                error: error => {
+
+                    console.log(error);
+                }
+            });
+
+
+        });
+
+        $('#other_filter').on('change', function() {
+
+            let other_filter =( $(this).find(":selected").val() );
+
+            let render_loading = Mustache.render(loading);
+
+            $("#product_chil").children().html(render_loading);
+
+            $.ajax({
+                // url: "/home/product_by_ajax/" + id,
+                url: "/product_by_other_filter",
+                type : "POST",
+                data   : {
+                    "other_filter" : other_filter,
+
+                    "_token": "{{ csrf_token() }}",
+                },
+                success : product  => {
+
+                    $("#product_chil").children().empty(); /// xóa component cũ và trang load///
+                    product.forEach((item) => {
+                        let rendered = Mustache.render(tmpl, item);
+                        $("#product_chil").children().append(rendered); ////thêm mới/////
+                    });
+                    console.log(product);
+                },
+                error: error => {
+
+                    console.log(error);
+                }
+            });
+
+
+        });
+
+
+        $('#price_search').on('change', function() {
+
+            let price =( $(this).find(":selected").val() );
+            console.log(price);
+
+            let render_loading = Mustache.render(loading);
+
+            $("#product_chil").children().html(render_loading);
+
+            $.ajax({
+                // url: "/home/product_by_ajax/" + id,
+                url: "/product_by_search",
+                type : "POST",
+                data   : {
+                    "price_search" : price,
+
+                    "_token": "{{ csrf_token() }}",
+                },
+                success : product  => {
+
+                    $("#product_chil").children().empty(); /// xóa component cũ và trang load///
+                    product.forEach((item) => {
+                        let rendered = Mustache.render(tmpl, item);
+                        $("#product_chil").children().append(rendered); ////thêm mới/////
+                    });
+                    console.log(product);
+                },
+                error: error => {
+
+                    console.log(error);
+                }
+            });
+
+
+        });
 
         $( "#filter_button" ).click(function() {
 
             let lower = $('#value-lower').text();
 
             let upper = $('#value-upper').text();
-            console.log(upper);
-            let render_loading = Mustache.render(loding);
+
+            let render_loading = Mustache.render(loading);
 
             $("#product_chil").children().html(render_loading);
 
