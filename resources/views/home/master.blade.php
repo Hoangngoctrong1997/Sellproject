@@ -83,91 +83,91 @@
     </div>
 
     <!-- Header Icon -->
-    <div class="header-icons">
-        <a href="#" class="header-wrapicon1 dis-block">
-            <img src="/images/img/demo/icons/icon-header-01.png" class="header-icon1" alt="ICON">
-        </a>
+{{--    <div class="header-icons">--}}
+{{--        <a href="#" class="header-wrapicon1 dis-block">--}}
+{{--            <img src="/images/img/demo/icons/icon-header-01.png" class="header-icon1" alt="ICON">--}}
+{{--        </a>--}}
 
-        <span class="linedivide1"></span>
+{{--        <span class="linedivide1"></span>--}}
 
-        <div class="header-wrapicon2">
-            <img src="/images/img/demo/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
-            <span class="header-icons-noti">0</span>
+{{--        <div class="header-wrapicon2">--}}
+{{--            <img src="/images/img/demo/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">--}}
+{{--            <span class="header-icons-noti">0</span>--}}
 
-            <!-- Header cart noti -->
-            <div class="header-cart header-dropdown">
-                <ul class="header-cart-wrapitem">
-                    <li class="header-cart-item">
-                        <div class="header-cart-item-img">
-                            <img src="/images/img/demo/item-cart-01.jpg" alt="IMG">
-                        </div>
+{{--            <!-- Header cart noti -->--}}
+{{--            <div class="header-cart header-dropdown">--}}
+{{--                <ul class="header-cart-wrapitem">--}}
+{{--                    <li class="header-cart-item">--}}
+{{--                        <div class="header-cart-item-img">--}}
+{{--                            <img src="/images/img/demo/item-cart-01.jpg" alt="IMG">--}}
+{{--                        </div>--}}
 
-                        <div class="header-cart-item-txt">
-                            <a href="#" class="header-cart-item-name">
-                                White Shirt With Pleat Detail Back
-                            </a>
+{{--                        <div class="header-cart-item-txt">--}}
+{{--                            <a href="#" class="header-cart-item-name">--}}
+{{--                                White Shirt With Pleat Detail Back--}}
+{{--                            </a>--}}
 
-                            <span class="header-cart-item-info">
-									1 x $19.00
-								</span>
-                        </div>
-                    </li>
+{{--                            <span class="header-cart-item-info">--}}
+{{--									1 x $19.00--}}
+{{--								</span>--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
 
-                    <li class="header-cart-item">
-                        <div class="header-cart-item-img">
-                            <img src="/images/item-cart-02.jpg" alt="IMG">
-                        </div>
+{{--                    <li class="header-cart-item">--}}
+{{--                        <div class="header-cart-item-img">--}}
+{{--                            <img src="/images/item-cart-02.jpg" alt="IMG">--}}
+{{--                        </div>--}}
 
-                        <div class="header-cart-item-txt">
-                            <a href="#" class="header-cart-item-name">
-                                Converse All Star Hi Black Canvas
-                            </a>
+{{--                        <div class="header-cart-item-txt">--}}
+{{--                            <a href="#" class="header-cart-item-name">--}}
+{{--                                Converse All Star Hi Black Canvas--}}
+{{--                            </a>--}}
 
-                            <span class="header-cart-item-info">
-									1 x $39.00
-								</span>
-                        </div>
-                    </li>
+{{--                            <span class="header-cart-item-info">--}}
+{{--									1 x $39.00--}}
+{{--								</span>--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
 
-                    <li class="header-cart-item">
-                        <div class="header-cart-item-img">
-                            <img src="/images/img/demo/item-cart-03.jpg" alt="IMG">
-                        </div>
+{{--                    <li class="header-cart-item">--}}
+{{--                        <div class="header-cart-item-img">--}}
+{{--                            <img src="/images/img/demo/item-cart-03.jpg" alt="IMG">--}}
+{{--                        </div>--}}
 
-                        <div class="header-cart-item-txt">
-                            <a href="#" class="header-cart-item-name">
-                                Nixon Porter Leather Watch In Tan
-                            </a>
+{{--                        <div class="header-cart-item-txt">--}}
+{{--                            <a href="#" class="header-cart-item-name">--}}
+{{--                                Nixon Porter Leather Watch In Tan--}}
+{{--                            </a>--}}
 
-                            <span class="header-cart-item-info">
-									1 x $17.00
-								</span>
-                        </div>
-                    </li>
-                </ul>
+{{--                            <span class="header-cart-item-info">--}}
+{{--									1 x $17.00--}}
+{{--								</span>--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
 
-                <div class="header-cart-total">
-                    Total: $75.00
-                </div>
+{{--                <div class="header-cart-total">--}}
+{{--                    Total: $75.00--}}
+{{--                </div>--}}
 
-                <div class="header-cart-buttons">
-                    <div class="header-cart-wrapbtn">
-                        <!-- Button -->
-                        <a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-                            View Cart
-                        </a>
-                    </div>
+{{--                <div class="header-cart-buttons">--}}
+{{--                    <div class="header-cart-wrapbtn">--}}
+{{--                        <!-- Button -->--}}
+{{--                        <a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">--}}
+{{--                            View Cart--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
 
-                    <div class="header-cart-wrapbtn">
-                        <!-- Button -->
-                        <a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-                            Check Out
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+{{--                    <div class="header-cart-wrapbtn">--}}
+{{--                        <!-- Button -->--}}
+{{--                        <a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">--}}
+{{--                            Check Out--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 </div>
 
 <!-- top noti -->
@@ -200,92 +200,92 @@
                 <img src="/images/img/demo/icons/logo-artglass.png" alt="IMG-LOGO">
             </a>
 
-            <div class="topbar-child2">
-                <!--  -->
-                <a href="#" class="header-wrapicon1 dis-block m-l-30">
-                    <img src="/images/img/demo/icons/icon-header-01.png" class="header-icon1" alt="ICON">
-                </a>
+{{--            <div class="topbar-child2">--}}
+{{--                <!--  -->--}}
+{{--                <a href="#" class="header-wrapicon1 dis-block m-l-30">--}}
+{{--                    <img src="/images/img/demo/icons/icon-header-01.png" class="header-icon1" alt="ICON">--}}
+{{--                </a>--}}
 
-                <span class="linedivide1"></span>
+{{--                <span class="linedivide1"></span>--}}
 
-                <div class="header-wrapicon2 m-r-13">
-                    <img src="/images/img/demo/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
-                    <span class="header-icons-noti">0</span>
+{{--                <div class="header-wrapicon2 m-r-13">--}}
+{{--                    <img src="/images/img/demo/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">--}}
+{{--                    <span class="header-icons-noti">0</span>--}}
 
-                    <!-- Header cart noti -->
-                    <div class="header-cart header-dropdown">
-                        <ul class="header-cart-wrapitem">
-                            <li class="header-cart-item">
-                                <div class="header-cart-item-img">
-                                    <img src="/images/img/demo/item-cart-01.jpg" alt="IMG">
-                                </div>
+{{--                    <!-- Header cart noti -->--}}
+{{--                    <div class="header-cart header-dropdown">--}}
+{{--                        <ul class="header-cart-wrapitem">--}}
+{{--                            <li class="header-cart-item">--}}
+{{--                                <div class="header-cart-item-img">--}}
+{{--                                    <img src="/images/img/demo/item-cart-01.jpg" alt="IMG">--}}
+{{--                                </div>--}}
 
-                                <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                        White Shirt With Pleat Detail Back
-                                    </a>
+{{--                                <div class="header-cart-item-txt">--}}
+{{--                                    <a href="#" class="header-cart-item-name">--}}
+{{--                                        White Shirt With Pleat Detail Back--}}
+{{--                                    </a>--}}
 
-                                    <span class="header-cart-item-info">
-											1 x $19.00
-										</span>
-                                </div>
-                            </li>
+{{--                                    <span class="header-cart-item-info">--}}
+{{--											1 x $19.00--}}
+{{--										</span>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
 
-                            <li class="header-cart-item">
-                                <div class="header-cart-item-img">
-                                    <img src="/images/img/demo/item-cart-02.jpg" alt="IMG">
-                                </div>
+{{--                            <li class="header-cart-item">--}}
+{{--                                <div class="header-cart-item-img">--}}
+{{--                                    <img src="/images/img/demo/item-cart-02.jpg" alt="IMG">--}}
+{{--                                </div>--}}
 
-                                <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                        Converse All Star Hi Black Canvas
-                                    </a>
+{{--                                <div class="header-cart-item-txt">--}}
+{{--                                    <a href="#" class="header-cart-item-name">--}}
+{{--                                        Converse All Star Hi Black Canvas--}}
+{{--                                    </a>--}}
 
-                                    <span class="header-cart-item-info">
-											1 x $39.00
-										</span>
-                                </div>
-                            </li>
+{{--                                    <span class="header-cart-item-info">--}}
+{{--											1 x $39.00--}}
+{{--										</span>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
 
-                            <li class="header-cart-item">
-                                <div class="header-cart-item-img">
-                                    <img src="/images/img/demo/item-cart-03.jpg" alt="IMG">
-                                </div>
+{{--                            <li class="header-cart-item">--}}
+{{--                                <div class="header-cart-item-img">--}}
+{{--                                    <img src="/images/img/demo/item-cart-03.jpg" alt="IMG">--}}
+{{--                                </div>--}}
 
-                                <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                        Nixon Porter Leather Watch In Tan
-                                    </a>
+{{--                                <div class="header-cart-item-txt">--}}
+{{--                                    <a href="#" class="header-cart-item-name">--}}
+{{--                                        Nixon Porter Leather Watch In Tan--}}
+{{--                                    </a>--}}
 
-                                    <span class="header-cart-item-info">
-											1 x $17.00
-										</span>
-                                </div>
-                            </li>
-                        </ul>
+{{--                                    <span class="header-cart-item-info">--}}
+{{--											1 x $17.00--}}
+{{--										</span>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
 
-                        <div class="header-cart-total">
-                            Total: $75.00
-                        </div>
+{{--                        <div class="header-cart-total">--}}
+{{--                            Total: $75.00--}}
+{{--                        </div>--}}
 
-                        <div class="header-cart-buttons">
-                            <div class="header-cart-wrapbtn">
-                                <!-- Button -->
-                                <a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-                                    View Cart
-                                </a>
-                            </div>
+{{--                        <div class="header-cart-buttons">--}}
+{{--                            <div class="header-cart-wrapbtn">--}}
+{{--                                <!-- Button -->--}}
+{{--                                <a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">--}}
+{{--                                    View Cart--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
 
-                            <div class="header-cart-wrapbtn">
-                                <!-- Button -->
-                                <a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-                                    Check Out
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--                            <div class="header-cart-wrapbtn">--}}
+{{--                                <!-- Button -->--}}
+{{--                                <a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">--}}
+{{--                                    Check Out--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
 
         <div class="wrap_header">
@@ -342,90 +342,90 @@
         <!-- Button show menu -->
         <div class="btn-show-menu">
             <!-- Header Icon mobile -->
-            <div class="header-icons-mobile">
-                <a href="#" class="header-wrapicon1 dis-block">
-                    <img src="/images/img/demo/icons/icon-header-01.png" class="header-icon1" alt="ICON">
-                </a>
+{{--            <div class="header-icons-mobile">--}}
+{{--                <a href="#" class="header-wrapicon1 dis-block">--}}
+{{--                    <img src="/images/img/demo/icons/icon-header-01.png" class="header-icon1" alt="ICON">--}}
+{{--                </a>--}}
 
-                <span class="linedivide2"></span>
+{{--                <span class="linedivide2"></span>--}}
 
-                <div class="header-wrapicon2">
-                    <img src="/images/img/demo/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
-                    <span class="header-icons-noti">0</span>
-                    <!-- Header cart noti -->
-                    <div class="header-cart header-dropdown">
-                        <ul class="header-cart-wrapitem">
-                            <li class="header-cart-item">
-                                <div class="header-cart-item-img">
-                                    <img src="/images/img/demo/item-cart-01.jpg" alt="IMG">
-                                </div>
+{{--                <div class="header-wrapicon2">--}}
+{{--                    <img src="/images/img/demo/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">--}}
+{{--                    <span class="header-icons-noti">0</span>--}}
+{{--                    <!-- Header cart noti -->--}}
+{{--                    <div class="header-cart header-dropdown">--}}
+{{--                        <ul class="header-cart-wrapitem">--}}
+{{--                            <li class="header-cart-item">--}}
+{{--                                <div class="header-cart-item-img">--}}
+{{--                                    <img src="/images/img/demo/item-cart-01.jpg" alt="IMG">--}}
+{{--                                </div>--}}
 
-                                <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                        White Shirt With Pleat Detail Back
-                                    </a>
+{{--                                <div class="header-cart-item-txt">--}}
+{{--                                    <a href="#" class="header-cart-item-name">--}}
+{{--                                        White Shirt With Pleat Detail Back--}}
+{{--                                    </a>--}}
 
-                                    <span class="header-cart-item-info">
-											1 x $19.00
-										</span>
-                                </div>
-                            </li>
+{{--                                    <span class="header-cart-item-info">--}}
+{{--											1 x $19.00--}}
+{{--										</span>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
 
-                            <li class="header-cart-item">
-                                <div class="header-cart-item-img">
-                                    <img src="/images/img/demo/item-cart-02.jpg" alt="IMG">
-                                </div>
+{{--                            <li class="header-cart-item">--}}
+{{--                                <div class="header-cart-item-img">--}}
+{{--                                    <img src="/images/img/demo/item-cart-02.jpg" alt="IMG">--}}
+{{--                                </div>--}}
 
-                                <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                        Converse All Star Hi Black Canvas
-                                    </a>
+{{--                                <div class="header-cart-item-txt">--}}
+{{--                                    <a href="#" class="header-cart-item-name">--}}
+{{--                                        Converse All Star Hi Black Canvas--}}
+{{--                                    </a>--}}
 
-                                    <span class="header-cart-item-info">
-											1 x $39.00
-										</span>
-                                </div>
-                            </li>
+{{--                                    <span class="header-cart-item-info">--}}
+{{--											1 x $39.00--}}
+{{--										</span>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
 
-                            <li class="header-cart-item">
-                                <div class="header-cart-item-img">
-                                    <img src="/images/img/demo/item-cart-03.jpg" alt="IMG">
-                                </div>
+{{--                            <li class="header-cart-item">--}}
+{{--                                <div class="header-cart-item-img">--}}
+{{--                                    <img src="/images/img/demo/item-cart-03.jpg" alt="IMG">--}}
+{{--                                </div>--}}
 
-                                <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                        Nixon Porter Leather Watch In Tan
-                                    </a>
+{{--                                <div class="header-cart-item-txt">--}}
+{{--                                    <a href="#" class="header-cart-item-name">--}}
+{{--                                        Nixon Porter Leather Watch In Tan--}}
+{{--                                    </a>--}}
 
-                                    <span class="header-cart-item-info">
-											1 x $17.00
-										</span>
-                                </div>
-                            </li>
-                        </ul>
+{{--                                    <span class="header-cart-item-info">--}}
+{{--											1 x $17.00--}}
+{{--										</span>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
 
-                        <div class="header-cart-total">
-                            Total: $75.00
-                        </div>
+{{--                        <div class="header-cart-total">--}}
+{{--                            Total: $75.00--}}
+{{--                        </div>--}}
 
-                        <div class="header-cart-buttons">
-                            <div class="header-cart-wrapbtn">
-                                <!-- Button -->
-                                <a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-                                    View Cart
-                                </a>
-                            </div>
+{{--                        <div class="header-cart-buttons">--}}
+{{--                            <div class="header-cart-wrapbtn">--}}
+{{--                                <!-- Button -->--}}
+{{--                                <a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">--}}
+{{--                                    View Cart--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
 
-                            <div class="header-cart-wrapbtn">
-                                <!-- Button -->
-                                <a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-                                    Check Out
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--                            <div class="header-cart-wrapbtn">--}}
+{{--                                <!-- Button -->--}}
+{{--                                <a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">--}}
+{{--                                    Check Out--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
             <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
 					<span class="hamburger-box">
