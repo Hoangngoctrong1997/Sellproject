@@ -227,11 +227,10 @@
 
                 <div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
                     <p class="s-text10 m-b-15 h-size1 of-hidden">
-                        Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
-                    </p>
+                         Sản phẩm tiêu biểu của chúng tôi</p>
 
                     <span class="s-text9">
-							Photo by @nancyward
+							Photo by @Admin
 						</span>
                 </div>
             </a>
