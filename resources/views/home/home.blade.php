@@ -50,7 +50,7 @@ h1 {font-weight: normal; font-size: 36px; margin-bottom: 75px;}
 #name_text {
     background: white; outline: none; border: 0 none;
     font: unset; text-align: left; color: hsl(120, 40%, 30%);
-    display: block; width:200px; padding: 0 10px;
+    display: block; width: 100%;min-height:50px;  padding: 0 10px;
     box-sizing: border-box;
 }
 #submit {display: none;}
@@ -105,7 +105,7 @@ h1 {font-weight: normal; font-size: 36px; margin-bottom: 75px;}
         </div> -->
         <!-- #2 text input -->
         <div>
-            <input type="text" id="name_text" class="cuboid-text" placeholder="Xong gõ vô đây cho xin cái tên đi &ensp; &#x1F60D; &#x1F60D;" autocomplete="off"/>
+            <input type="text" id="name_text" class="cuboid-text" placeholder="Mình Xin tên bạn đi  &ensp; &#x1F60D; &#x1F60D;" autocomplete="off"/>
             <!-- hidden submit button -->
         </div>
     </form>
