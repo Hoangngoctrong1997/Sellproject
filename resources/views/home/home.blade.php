@@ -50,7 +50,7 @@ h1 {font-weight: normal; font-size: 36px; margin-bottom: 75px;}
 #name_text {
     background: white; outline: none; border: 0 none;
     font: unset; text-align: left; color: hsl(120, 40%, 30%);
-    display: block; width: 100%;min-height:50px;  padding: 0 10px;
+    display: block; width: 100%;min-height:50px;  padding: 0 10px;border-radius:20px;
     box-sizing: border-box;
 }
 #submit {display: none;}
