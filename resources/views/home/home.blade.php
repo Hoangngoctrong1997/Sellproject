@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<<style>
+<style>
 /*Custom fonts - Sniglet and FontAwesome*/
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 .cursive {
@@ -196,7 +196,7 @@ h1 {font-weight: normal; font-size: 36px; margin-bottom: 75px;}
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
-<<script>
+<script>
     var data = {name:"",interests:""};
 
 $('#so1').click(function(){
@@ -206,7 +206,6 @@ $('#so1').click(function(){
        $("body").css({"background-image": "url(\"https://scontent.fhan5-5.fna.fbcdn.net/v/t1.0-9/25659645_2016871718553692_4648996418019014365_n.jpg?_nc_cat=101&_nc_sid=dd9801&_nc_ohc=FFnb-YUGxagAX8Pt0yw&_nc_ht=scontent.fhan5-5.fna&oh=e3db8d5b9d9d8a05572fc013f0f3f43a&oe=5F52790E\")",
                     "background-position":"center",
                     "background-repeat":"no-repeat",
-                    "background-size":"100%",
        });
        $("#alert_form").html("Bạn " +name+" xinh đẹp bạn cho mình làm quen được hônggggggg<span style='font-size:30px;'>&#128536;</span>");
        $("#so1").toggle();
