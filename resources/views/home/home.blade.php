@@ -52,12 +52,12 @@ h1 {font-weight: normal; font-size: 36px; margin-bottom: 75px;}
 @keyframes phase {
     50% {background: hsl(120, 70%, 30%);}
 }
-/* #name_text {
+#name_text {
     background: white; outline: none; border: 0 none;
     font: unset; text-align: left; color: hsl(120, 40%, 30%);
     display: block; width: 100%; padding: 0 10px;
     box-sizing: border-box;
-} */
+}
 #submit {display: none;}
 
 .submit-icon, .reset-icon {
@@ -114,17 +114,14 @@ h1 {font-weight: normal; font-size: 36px; margin-bottom: 75px;}
 <div id="cuboid">
     <form>
         <!-- #1 hover button -->
-        <!-- <div>
+        <div>
             <p id="text1" class="cuboid-text">Di con chuột vô đây đi má &#x1F602;</p>
-        </div> -->
+        </div>
         <!-- #2 text input -->
-        
-        <div class="search-wrapper">
-        <form>
-        <input id="name_text" type="text" name="focus" required class="search-box" placeholder="Xin cái tên má ơi :v" />
-            <button class="close-icon" type="reset"></button>
-        </form>
-</div>
+        <div>
+            <input type="text" id="name_text" class="cuboid-text" placeholder="Xong gõ vô đây cho xin cái tên đi &ensp; &#x1F60D; &#x1F60D;" autocomplete="off"/>
+            <!-- hidden submit button -->
+        </div>
     </form>
 </div>
 <div id="so1" style="padding-top: 20px;display: inline-block">
