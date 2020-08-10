@@ -12,11 +12,11 @@ use Illuminate\Support\Facades\DB;
 class home_controller extends Controller
 {
     public function index(){
-        $domain = $this->domain;
-        $product_hot_view=DB::table('product')->orderBy('view','desc')->take(3)->get();
-            $product         =DB::table('product')->orderBy('created', 'desc')->take(8)->get();
-        $product_hot     = DB::table('product')->where('hot_product', 1)->orderBy('created', 'desc')->take(3)->get();
-        return view('home.home',compact('product_hot','domain','product','product_hot_view'));
+        // $domain = $this->domain;
+        // $product_hot_view=DB::table('product')->orderBy('view','desc')->take(3)->get();
+        //     $product         =DB::table('product')->orderBy('created', 'desc')->take(8)->get();
+        // $product_hot     = DB::table('product')->where('hot_product', 1)->orderBy('created', 'desc')->take(3)->get();
+        return view('home.home');
 
     }
     public function get_product_ajax($id){
