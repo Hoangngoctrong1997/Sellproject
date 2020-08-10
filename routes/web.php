@@ -18,6 +18,9 @@ Route::group(['prefix' => 'admin'], function () {
     Route::post('createcategory', 'admin_controller@create_category')->name('create_category');
     Route::post('posts/store', 'PostController@store');
     Route::get('posts/{id}/edit', 'PostController@edit');
+
+    Route::get ('edit_by_ajax/{id}','admin_controller@edit_by_ajax')->name('edit_by_ajax');
+
 });
 Route::group(['prefix' => '/'], function () {
     Route::get('trang-chu', 'home_controller@index')->name('trang-chu');
@@ -34,7 +37,4 @@ Route::group(['prefix' => '/'], function () {
      Route::POST ('product_by_other_filter','home_controller@get_product_other_filter')->name('get_product_other_filter');
 
      Route::POST ('product_by_search_form','home_controller@get_product_by_search_form')->name('product_by_search_form');
-
-
-
 });

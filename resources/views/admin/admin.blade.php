@@ -5,36 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>AdminLTE 3 | Dashboard 2</title>
+    <title>Admin</title>
     <base href="{{asset('')}}"> <!--thiếu cấy ni là không lấy đàng dẫn được nhá -->
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="/admin/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="{{asset('/admin/plugins/fontawesome-free/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/admin/css/custom.css')}}">
     <!-- Tempusdominus Bbootstrap 4 -->
-    <link rel="stylesheet" href="/admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-    <link rel="stylesheet" href="/admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="/admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="{{asset('/admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="{{asset('/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
     <!-- Theme style -->
-    <link rel="stylesheet" href="/admin/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="{{asset('/admin/dist/css/adminlte.min.css')}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="/admin/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="{{asset('/admin/plugins/fontawesome-free/css/all.min.css')}}">
     <!-- summernote -->
-    <link rel="stylesheet" href="/admin/plugins/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="{{asset('/admin/plugins/summernote/summernote-bs4.css')}}">
     <!-- daterange picker -->
-    <link rel="stylesheet" href="/admin/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="{{asset('/admin/plugins/daterangepicker/daterangepicker.css')}}">
     <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
     <!-- Select2 -->
-    <link rel="stylesheet" href="/admin/plugins/select2/css/select2.min.css">
-    <link rel="stylesheet" href="/admin/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <link rel="stylesheet" href="{{asset('/admin/plugins/select2/css/select2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/admin/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css')}}">
     <!-- Bootstrap4 Duallistbox -->
-    <link rel="stylesheet" href="/admin/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <link rel="stylesheet" href="{{asset('/admin/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css')}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <!-- Bootstrap Switch -->
-    <script src="/admin/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <script src="{{asset('/admin/plugins/bootstrap-switch/js/bootstrap-switch.min.js')}}"></script>
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Google Font: Source Sans Pro -->
@@ -720,8 +721,6 @@
         </div>
         <!-- /.sidebar -->
     </aside>
-
-    <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <div class="content-header">
@@ -912,7 +911,7 @@
                                         <td>
                                             <div class="row">
                                                 <div class="col-sm-6"style="text-align: center">
-                                                    <a data-toggle="modal" id="{{$product_tables->id}}" data-target="#modal-xl_edit">
+                                                    <a class="button_edit" data-toggle="modal" id="{{$product_tables->id}}" data-target="#modal-xl_edit">
                                                         <i style="color:#17a2b8;" class="fas fa-edit"></i>
                                                     </a>
                                                 </div>
@@ -951,7 +950,6 @@
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
         <!-- Control sidebar content goes here -->
@@ -1080,19 +1078,15 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div id="edit_modal" class="modal-body">
                     <section class="content">
                         <div class="container-fluid">
                             <div class="row">
-                                <!-- left column -->
                                 <div class="col-md-12">
-                                    <!-- general form elements -->
                                     <div class="card card-success">
                                         <div class="card-header">
                                             <h3 class="card-title">Thông tin cơ bản</h3>
                                         </div>
-                                        <!-- /.card-header -->
-                                        <!-- form start -->
                                         <form role="form">
                                             <div class="card-body">
                                                 <div class="form-group">
@@ -1137,31 +1131,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <!-- /.card-body -->
-                                        </form>
-                                    </div>
-                                    <!-- /.card -->
-                                </div>
-                                <div class="col-md-12">
-                                    <!-- general form elements -->
-                                    <div class="card card-primary">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Thông tin bổ sung</h3>
-                                        </div>
-                                        <!-- /.card-header -->
-                                        <!-- form start -->
-                                        <form role="form">
-                                            <div class="card-body">
-                                                <div class="form-group">
-                                                    <label>Ngày đăng</label>
-                                                    <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                                                        <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
-                                                        <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
-                                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                                 <div class="form-group">
                                                     <label>Active</label>
                                                     <select class="form-control select2" style="width: 100%;">
@@ -1186,19 +1155,11 @@
                                                               style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                                 </div>
                                             </div>
-
-                                            <!-- /.card-body -->
-                                            <div class="card-footer">
-                                                <button type="submit" class="btn btn-primary">Đăng</button>
-                                            </div>
                                         </form>
                                     </div>
-                                    <!-- /.card -->
                                 </div>
-                                <!--/.col (left) -->
                             </div>
-                            <!-- /.row -->
-                        </div><!-- /.container-fluid -->
+                        </div>
                     </section>
                 </div>
                 <div class="modal-footer justify-content-between">
@@ -1228,7 +1189,6 @@
         </div>
         <!-- /.modal-dialog -->
     </div>
-
     <div class="modal fade" id="modal-xl_add_category">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -1461,42 +1421,134 @@
     </footer>
 </div>
 <!-- ./wrapper -->
-
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
-<script src="/admin/plugins/jquery/jquery.min.js"></script>
+<script src="{{asset('/admin/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap -->
-<script src="/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('/admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- overlayScrollbars -->
-<script src="/admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="{{asset('/admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="/admin/dist/js/adminlte.js"></script>
+<script src="{{asset('/admin/dist/js/adminlte.js')}}"></script>
 
 <!-- OPTIONAL SCRIPTS -->
-<script src="/admin/dist/js/demo.js"></script>
+<script src="{{asset('/admin/dist/js/demo.js')}}"></script>
 <!-- PAGE PLUGINS -->
 <!-- jQuery Mapael -->
-<script src="/admin/plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
-<script src="/admin/plugins/raphael/raphael.min.js"></script>
-<script src="/admin/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="/admin/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="/admin/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="/admin/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="/admin/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<script src="{{asset('/admin/plugins/jquery-mousewheel/jquery.mousewheel.js')}}"></script>
+<script src="{{asset('/admin/plugins/raphael/raphael.min.js')}}"></script>
+<script src="{{asset('/admin/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('/admin/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{asset('/admin/plugins/datatables-responsive/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{asset('/admin/plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
+<script src="{{asset('/admin/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
 <!-- Bootstrap4 Duallistbox -->
-<script src="/admin/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<script src="{{asset('/admin/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js')}}"></script>
 <!-- InputMask -->
-<script src="/admin/plugins/moment/moment.min.js"></script>
-<script src="/admin/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<script src="{{asset('/admin/plugins/moment/moment.min.js')}}"></script>
+<script src="{{asset('/admin/plugins/inputmask/min/jquery.inputmask.bundle.min.js')}}"></script>
 <!-- date-range-picker -->
-<script src="/admin/plugins/daterangepicker/daterangepicker.js"></script>
+<script src="{{asset('/admin/plugins/daterangepicker/daterangepicker.js')}}"></script>
 <!-- bootstrap color picker -->
-<script src="/admin/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<script src="{{asset('/admin/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js')}}"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="/admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="{{asset('/admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
+<script src="{{asset('/admin/plugins/jquery-mapael/maps/usa_states.min.js')}}"></script>
 <!-- PAGE SCRIPTS -->
-<script src="/admin/dist/js/pages/dashboard2.js"></script>
-<script src="/admin/plugins/summernote/summernote-bs4.min.js"></script> <!--js của thằng cha textarea-->
+<script src="{{asset('/admin/dist/js/pages/dashboard2.js')}}"></script>
+<script src="{{asset('/admin/plugins/summernote/summernote-bs4.min.js')}}"></script> <!--js của thằng cha textarea-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+<script id="edit_product_modal" type="x-tmpl-mustache">
+<section class="content">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-success">
+                <div class="card-header">
+                    <h3 class="card-title"></h3>
+                </div>
+                <form role="form">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Tên Sản phẩm</label>
+                            <input type="email" value="@{{name}}" class="form-control" id="exampleInputEmail1" placeholder="Tên sản phẩm">
+                        </div>
+                        <div class="form-group">
+                            <label>Danh mục ( category )</label>
+                            <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected" value="@{{category_id}}">@{{category_name}}</option>
+                                @{{#category}}
+                                <option value="@{{id}}">@{{category_name}}</option>
+                               @{{/category}}
+                            </select>
+                        </div>
+                        <div class="row" style="padding-bottom: 10px">
+                            <div class="input-group col-sm-6">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Giá sản phẩm</span>
+                                </div>
+                                <input type="text" class="form-control"value="@{{price}}">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">.00</span>
+                                </div>
+                            </div>
+                            <div class="input-group col-sm-6">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Giá Sale</span>
+                                </div>
+                                <input type="text" class="form-control"value="@{{discount}}">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">Ảnh sản phẩm</label>
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="exampleInputFile">
+                                    <label class="custom-file-label" for="exampleInputFile">Chọn File</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Active</label>
+                            <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Active</option>
+                                <option>None Active</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Nổi bật</label>
+                            <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Nổi bật</option>
+                                <option>Thường</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Mô tả ngắn</label>
+                            <input type="text" class="form-control" placeholder="Mô tả ngắn ...">
+                        </div>
+                       <div class="form-group">
+                            <label>Giới thiệu sản phẩm</label>
+                            <textarea name="product_content" class="textarea" placeholder="Place some text here"
+                                      style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</script>
+<script id="loading" type="x-tmpl-mustache">
+     <div class="load-3">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+</script>
 <script>
     $(function () {
         $("#example1").DataTable({
@@ -1516,7 +1568,7 @@
     $(function () {
         // Summernote
         $('.textarea').summernote()
-    })
+    });
     $(function () {
         //Initialize Select2 Elements
         $('.select2').select2()
@@ -1591,6 +1643,42 @@
     $(document).ready(function () {
         bsCustomFileInput.init();
     });
+    $(document).ready(function () {
+
+
+        $(".button_edit").click(function() {
+            let loading = $('#loading').html();
+            let tmpl = $('#edit_product_modal').html();
+
+            let id = this.id;
+
+
+            let render_loading = Mustache.render(loading);
+
+            $("#edit_modal").children().html(render_loading);
+
+            $.ajax({
+                url: "/admin/edit_by_ajax/" + id,
+                method : "get",
+                success : response  => {
+                    console.log(response);
+                    $("#edit_modal").children().empty(); /// xóa component cũ và trang load///
+
+                    response.forEach((item) => {
+
+                        let rendered = Mustache.render(tmpl, item);
+
+                        $("#edit_modal").children().append(rendered); ////thêm mới/////
+                    });
+                },
+                error: error => {
+
+                    console.log(error);
+                }
+            });
+        });
+    });
+
 
 </script>
 </body>

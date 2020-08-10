@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="{{asset('')}}"> <!--thiếu cấy ni là không lấy đàng dẫn được nhá -->
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+    <link rel="icon" type="image/png" href="{{asset('images/img/demo/icons/favicon.png')}}"/>
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{asset('/home/vendor/bootstrap/css/bootstrap.min.css')}}">
     <!--===============================================================================================-->
@@ -44,7 +44,7 @@
 <div class="wrap_header fixed-header2 trans-0-4">
     <!-- Logo -->
     <a href="{!! route('trang-chu') !!}" class="logo">
-        <img style="max-height: 80px" src="/images/img/demo/icons/logo2.png" alt="IMG-LOGO">
+        <img style="max-height: 80px" src="{{asset('/images/img/demo/icons/logo2.png')}}" alt="IMG-LOGO">
     </a>
 
     <!-- Menu -->

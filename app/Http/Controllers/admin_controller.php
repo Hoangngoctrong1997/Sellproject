@@ -18,13 +18,26 @@ class admin_controller extends Controller
             ->select('product.*','category.category_name')
             ->join('category','category.id','=','product.category_id')
             ->get();
+
         return view('admin.admin',compact('product_table','category'));
+
+    }
+    public function edit_by_ajax($id){
+
+        $category = DB::table('category')->get();
+
+        $product = DB::table('product')->where('product.id', $id)
+            ->select('product.*','category.category_name')
+            ->join('category','category.id','=','product.category_id')
+            ->get();
+        $product[0]->category = $category;
+
+        return response()->json($product);
 
     }
     public function create_product(Request $req)
 
     {
-        echo $req->product_name;die;
         $product = new product();
         if($req->hasFile('fImage')):
             $image = $req->file('fImage');
@@ -35,7 +48,7 @@ class admin_controller extends Controller
         $product->created = Carbon::now('Asia/Ho_Chi_Minh');
         $product->name = $req->product_name;
         $product->category_id = $req->category;
-        $product->slug_name = Str::slug($req->product_name);;
+        $product->slug_name = Str::slug($req->product_name);
         $product->price = $req->price;
         $product->discount = $req->discount;
         $product->view = 0;
