@@ -39,11 +39,6 @@ h1 {font-weight: normal; font-size: 36px; margin-bottom: 75px;}
 }
 
 /*faces*/
-.cuboid-text {
-    /*each face will be 40px high*/
-    line-height: 40px; height: 40px;
-    background: hsl(120, 40%, 20%);
-}
 .loader {
     background: hsl(120, 40%, 30%);
     animation: phase 1s infinite;
@@ -114,9 +109,9 @@ h1 {font-weight: normal; font-size: 36px; margin-bottom: 75px;}
 <div id="cuboid">
     <form>
         <!-- #1 hover button -->
-        <div>
+        <!-- <div>
             <p id="text1" class="cuboid-text">Di con chuột vô đây đi má &#x1F602;</p>
-        </div>
+        </div> -->
         <!-- #2 text input -->
         <div>
             <input type="text" id="name_text" class="cuboid-text" placeholder="Xong gõ vô đây cho xin cái tên đi &ensp; &#x1F60D; &#x1F60D;" autocomplete="off"/>
