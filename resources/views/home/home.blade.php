@@ -50,7 +50,7 @@ h1 {font-weight: normal; font-size: 36px; margin-bottom: 75px;}
 #name_text {
     background: white; outline: none; border: 0 none;
     font: unset; text-align: left; color: hsl(120, 40%, 30%);
-    display: block; width: 100%; padding: 0 10px;
+    display: block; width:200px; padding: 0 10px;
     box-sizing: border-box;
 }
 #submit {display: none;}
@@ -68,18 +68,9 @@ h1 {font-weight: normal; font-size: 36px; margin-bottom: 75px;}
 .submit-icon.active {color: hsl(120, 40%, 30%);}
 .reset-icon {color: rgba(255, 255, 255, 0.25); font-size: 14px;}
 
-#cuboid div {position: absolute; top: 0; left: 0; width: 100%;}
-/*3D transforms. Each face will be rotated in multiples of -90deg and moved 20px(half of their 40px height) out*/
-#cuboid div:nth-child(1) {transform: rotateX(0deg) translateZ(20px);}
-#cuboid div:nth-child(2) {transform: rotateX(-90deg) translateZ(20px);}
-#cuboid div:nth-child(3) {transform: rotateX(-180deg) translateZ(20px);}
-#cuboid div:nth-child(4) {transform: rotateX(-270deg) translateZ(20px);}
+
 
 /*the form will have 4 states/classes(default+3) for rotation*/
-#cuboid form:hover,
-#cuboid form.ready {transform: translateZ(-20px) rotateX(90deg);}
-#cuboid form.loading {transform: translateZ(-20px) rotateX(180deg);}
-#cuboid form.complete {transform: translateZ(-20px) rotateX(270deg);}
 .success{
     width: fit-content;
     min-width: 110px;
