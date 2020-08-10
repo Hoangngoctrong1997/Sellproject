@@ -118,13 +118,10 @@ h1 {font-weight: normal; font-size: 36px; margin-bottom: 75px;}
             <p id="text1" class="cuboid-text">Di con chuột vô đây đi má &#x1F602;</p>
         </div> -->
         <!-- #2 text input -->
-        <div>
-            <input type="text" id="name_text" class="cuboid-text" placeholder="Xong gõ vô đây cho xin cái tên đi &ensp; &#x1F60D; &#x1F60D;" autocomplete="off"/>
-            <!-- hidden submit button -->
-        </div>
+        
         <div class="search-wrapper">
         <form>
-        <input id="name_text" type="text" name="focus" required class="search-box" placeholder="Enter search term" />
+        <input id="name_text" type="text" name="focus" required class="search-box" placeholder="Xin cái tên má ơi :v" />
             <button class="close-icon" type="reset"></button>
         </form>
 </div>
