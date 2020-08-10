@@ -6,8 +6,6 @@
     <script type="text/javascript" src="http://www.maytinhhtl.com/images/code/snowstorm.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
 <title>I Love You :-*</title>
-<link rel="stylesheet" href="http://yeuemvv.epizy.com/css/popup.css">
-<link rel="stylesheet" href="http://yeuemvv.epizy.com/css/styles.css">
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
 <script type="text/javascript" src="js/jquery.popup.js"></script>
