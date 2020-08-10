@@ -18,6 +18,456 @@
 <style>
     body{
         background-image: url(https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-9/51369897_2264155860491942_4455491999335710720_o.jpg?_nc_cat=101&_nc_sid=0be424&_nc_ohc=c14QJlB9sTYAX9eCWIK&_nc_ht=scontent.fhan2-1.fna&oh=ce0edc567339875cc4171b4b34de86e4&oe=5F58C0EF);
+        @charset  utf-8;
+
+/* CSS Document */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+background: url('bg.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
+#bg { 
+position: fixed; 
+    	height: 100%;
+		width: 100%;
+		background: #000;
+		z-index: 200;
+		top: 0;
+		left: 0; 
+}
+
+.msg {
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #FFF;
+	font-size: 16px;
+}
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 72px;
+	font-weight: lighter;
+	color: #FFF;
+}
+#divResult h2{
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+
+}
+
+input[type=button] {
+	background: #C5062C;
+	color: #fff;
+	border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 15px 25px;
+	font-weight: 700;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#co {
+	background: #C5062C;
+	border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 15px 25px;
+	position: absolute;
+	left: 500px;
+	top: 300px;
+	cursor: pointer;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+#co a {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+#co:hover {
+	background: #111;
+}
+
+#form {
+	float: left;
+	background: #C5062C;
+	font-size: 19px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 0;
+	height: 48px;
+	width: 500px;
+	padding: 0 10px;
+	color: #fff;
+}
+
+#form:focus {
+	background: #111;
+}
+
+#gui {
+	position: absolute;
+	right: 20px;
+}
+
+#gui:hover {
+	background: #111;
+}
+
+#traloi h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	color: #000;
+	font-weight: bold;
+}
+#traloi p {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+}
+#divResult2 p {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+}
+#divResult3 p {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+}
+
+#dialog-overlay {
+	width:100%; 
+	height:100%;
+	background:#000; 
+	position:absolute; 
+	top:0; left:0; 
+	z-index:3000; 
+	display:none;
+}
+
+
+#dialog-box {
+	background:#eee;
+	width:328px; 
+	position:absolute; 
+	z-index:5000; 
+	display:none;
+}
+
+#dialog-box .dialog-content {
+
+	text-align:left; 
+	padding:10px; 
+	margin:13px;
+	color:#666; 
+	font-size:15px; 
+}
+
+#dialog-box .dialog-content p {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-weight:700; 
+	margin:0;
+}
+
+#dialog-box .dialog-content ul {
+	margin:10px 0 10px 20px; 
+	padding:0; 
+	height:100px;
+}
+#msb-nt{
+	background: #C5062C;
+	border: 0;
+	width: 50px;
+	margin-left: 200px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+#dialog-box .dialog-content a{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 15px;
+}
+@charset  utf-8;
+
+/* CSS Document */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+background: url('bg.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
+#bg { 
+position: fixed; 
+    	height: 100%;
+		width: 100%;
+		background: #000;
+		z-index: 200;
+		top: 0;
+		left: 0; 
+}
+
+.msg {
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #FFF;
+	font-size: 16px;
+}
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 72px;
+	font-weight: lighter;
+	color: #FFF;
+}
+#divResult h2{
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+
+}
+
+input[type=button] {
+	background: #C5062C;
+	color: #fff;
+	border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 15px 25px;
+	font-weight: 700;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#co {
+	background: #C5062C;
+	border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 15px 25px;
+	position: absolute;
+	left: 500px;
+	top: 300px;
+	cursor: pointer;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+#co a {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+#co:hover {
+	background: #111;
+}
+
+#form {
+	float: left;
+	background: #C5062C;
+	font-size: 19px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 0;
+	height: 48px;
+	width: 500px;
+	padding: 0 10px;
+	color: #fff;
+}
+
+#form:focus {
+	background: #111;
+}
+
+#gui {
+	position: absolute;
+	right: 20px;
+}
+
+#gui:hover {
+	background: #111;
+}
+
+#traloi h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	color: #000;
+	font-weight: bold;
+}
+#traloi p {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+}
+#divResult2 p {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+}
+#divResult3 p {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+}
+
+#dialog-overlay {
+	width:100%; 
+	height:100%;
+	background:#000; 
+	position:absolute; 
+	top:0; left:0; 
+	z-index:3000; 
+	display:none;
+}
+
+
+#dialog-box {
+	background:#eee;
+	width:328px; 
+	position:absolute; 
+	z-index:5000; 
+	display:none;
+}
+
+#dialog-box .dialog-content {
+
+	text-align:left; 
+	padding:10px; 
+	margin:13px;
+	color:#666; 
+	font-size:15px; 
+}
+
+#dialog-box .dialog-content p {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-weight:700; 
+	margin:0;
+}
+
+#dialog-box .dialog-content ul {
+	margin:10px 0 10px 20px; 
+	padding:0; 
+	height:100px;
+}
+#msb-nt{
+	background: #C5062C;
+	border: 0;
+	width: 50px;
+	margin-left: 200px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+#dialog-box .dialog-content a{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 15px;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
     }
 </style>
 <script type="text/javascript">
