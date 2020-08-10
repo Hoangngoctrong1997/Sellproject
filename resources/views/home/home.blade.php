@@ -10,7 +10,7 @@
 <link rel="stylesheet" src="http://yeuemvv.epizy.com/css/styles.css">
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
-<script type="text/javascript" src="js/jquery.popup.js"></script>
+<script type="text/javascript" src="http://yeuemvv.epizy.com/js/jquery.popup.js"></script>
 <script src="js/popup.js" type="text/javascript"></script>
 <script src="js/jquery-1.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -64,7 +64,7 @@ else
 }
 }
 </script>
-<script src="js/pace.min.js"></script>
+<script src="http://yeuemvv.epizy.com/js/pace.min.js"></script>
   <link href="css/dataurl.css" rel="stylesheet" />
 
 </head>	
